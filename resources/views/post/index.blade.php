@@ -11,7 +11,7 @@
                     <small>body data: {!!$item->body!!}</small>                
                 </div>
             @endforeach
-            {{-- links are supplied form controller --}}
+            {{-- links are supplied form controller file --}}
         {{-- {{$allDatas->links()}}  --}}
         {{-- collection->links() is used for pagination  --}}
     @else

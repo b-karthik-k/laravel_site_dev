@@ -2,7 +2,7 @@
 @section('content')
     <h6>Post data from create DAta file in post folder</h6>
     <h1>Create Post Data</h1>
-    {!! Form::open(['action' => 'PostController@store','method'=>'POST'] ) !!}
+    {!! Form::open(['id'=> 'create_post_form','action' => 'PostController@store','method'=>'POST'] ) !!}
     <div class="form-group">
         {{Form::label('title','Title')}}
         {{Form::text('title','',['class' => 'form-control' ,'placeholder' => 'Title

@@ -17,8 +17,7 @@
                     <br>
                     <strong>With html parsed</strong>
                     <small>body data: {!!$item->body!!}</small>                
-                </div>
-                
+                </div>                
             </div>
             @endforeach
             {{-- links are supplied form controller file --}}

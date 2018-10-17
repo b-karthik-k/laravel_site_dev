@@ -85,6 +85,8 @@ class PostController extends Controller
             $saveData = new Post;
             $saveData->title = $request->input('title');
             $saveData->body = $request->input('body');
+            $saveData->user_id = auth()->user()->id;
+
             $saveData->save();
 
             return redirect('/post')->with('success', 'Post Created');
